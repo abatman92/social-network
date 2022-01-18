@@ -1,0 +1,10 @@
+.postBlock {
+    margin: 15px auto 0;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.postBlock h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}

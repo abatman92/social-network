@@ -1,0 +1,42 @@
+.items {
+    width: 35%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.item {
+    display: block;
+    position: relative;
+    left: 11px;
+    color: #3991ff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.item::before {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: -10px;
+    top: calc(50% - 3px);
+}
+
+.active {
+    font-weight: 600;
+}
+
+.messages {
+    width: 65%;
+}
+
+.message {
+    display: block;
+    color: rgba(0, 0, 0, .55);
+}

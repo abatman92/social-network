@@ -1,0 +1,16 @@
+.post {
+    margin-bottom: 5px;
+    display: flex;
+    color: black;
+    border-top: 1px solid rgba(128, 128, 128, 0.1);
+    padding: 6px;
+}
+
+.post img {
+    width: 35px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 10px;
+    object-fit: contain;
+    
+}

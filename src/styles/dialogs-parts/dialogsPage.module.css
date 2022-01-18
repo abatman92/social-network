@@ -1,0 +1,14 @@
+.dialogs {
+    display: flex;
+    position: relative;
+}
+
+.dialogs::after {
+    height: calc(100% + 40px);
+    width: 1px;
+    background-color: rgba(128, 128, 128, 0.1);
+    content: '';
+    top: 0;
+    left: 30%;
+    position: absolute;
+}

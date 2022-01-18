@@ -1,0 +1,18 @@
+.header {
+    margin-top: 10px;
+    grid-area: header;
+    background: linear-gradient(to right, #fff 30%, #3991ff);
+    display: flex;
+}
+
+.header h1 {
+    font-family: 'Work Sans';
+    font-weight: 900;
+    line-height: 1.2;
+    font-size: 2.5rem;
+}
+
+.header-logo {
+    width: 30px;
+    height: 40px;
+}

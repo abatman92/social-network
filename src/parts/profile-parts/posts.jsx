@@ -1,7 +1,10 @@
 import Post from "./post";
 import postBlock from "../../styles/profile-parts/postBlock.module.css"
 
-function Posts() {
+function Posts(props) {
+  const posts = props.messages.map((item) => {
+    return <Post message={item.message} />;
+  });
   return (
     <div>
       <form className="posts">
@@ -11,8 +14,7 @@ function Posts() {
       </form>
       <div className={postBlock.postBlock}>
         <h3>Messages</h3>
-        <Post message="hi" />
-        <Post message="hi, i'm there" />
+        {posts}
       </div>
     </div>
   );

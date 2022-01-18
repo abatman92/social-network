@@ -9,15 +9,14 @@ import Music from './parts/music';
 import Settings from './parts/settings';
 
 function App(props) {
-  
   return (
     <BrowserRouter>
       <div className="App">
         <Header />
         <Navigation />
         <Routes>
-          <Route path="" element={<Profile />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="" element={<Profile messages={props.data.postArr} />} />
+          <Route path="/profile" element={<Profile messages={props.data.postArr} />} />
           <Route path="/dialogs" element={<Dialogs data={props.data} />} />
           <Route path="/news" element={<News />} />
           <Route path="/music" element={<Music />} />
